@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.797),rgba(0, 0, 0, 0.578),rgba(0, 0, 0, 0.363)), url(img/tingfeng-xia-J8sPKcHG0pw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    height: 180px;
+    margin-top: 20px;
+}
+nav ul{
+    display: flex;
+    gap: 60px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text h1{
+    font-size: 3.6em;
+    font-weight: 700;
+    color: white;
+}
+.form{
+    height: 300px;
+    width: 430px;
+    background: linear-gradient(#62d45e,#62d45e,#ffd700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.input{
+    height: 40px;
+    width: 270px;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 3px;
+    align-items: center;
+    padding: 5px 0 5px 10px;
+    background: white;
+}
+.input2{
+    height: 90px;
+}
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+    
+}
+textarea{
+    width: 260px;
+    height: 70px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+
+@media screen and (max-width:680px) {
+    .logo img{
+        height: 80px;
+    }
+    nav ul{
+        gap: 20px;
+    }
+    nav ul li a{
+        font-size: 0.7em;
+    }
+    .text h1{
+        font-size: 2.2em;
+    }
+}
+@media screen and (max-width:440px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 0 0 20px 0;
+    }
+
+    label{
+        font-size: 0.8;
+    }
+    .form{
+        height: 260px;
+        width: 390px;
+    }
+    .input{
+        height: 40px;
+        width: 240px;
+    }
+    .input2{
+        height: 60px;
+    }
+}
