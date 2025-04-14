@@ -84,6 +84,16 @@ textarea{
     border: none;
     background: transparent;
 }
+.btn3{
+    display:flex;
+    justify-content:center;
+}
+.btn33{
+    height:43px;
+    width:120px;
+    border:none;
+    border-radius:10px;
+}
 
 
 @media screen and (max-width:680px) {
